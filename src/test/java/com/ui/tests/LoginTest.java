@@ -19,7 +19,7 @@ public class LoginTest {
 	
 	@BeforeMethod(description = "Launching the browser")
 	public void setUp() {
-		 home = new HomePage("chrome",false);
+		 home = new HomePage("chrome",true);
 	}
 	
 	@Test(description = "Verify with valid credential to login into the application successfully",groups = {"regression","smoke","sanity"},
