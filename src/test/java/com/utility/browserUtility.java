@@ -91,7 +91,7 @@ public  class browserUtility {
 	
 	
 	public String properties(ENV env)  {
-		File fileprop = new File(System.getProperty("user.dir")+"\\Config\\"+env+".properties");
+		File fileprop = new File(System.getProperty("user.dir")+ File.separator+"Config"+ File.separator+env+".properties");
 		FileReader filereader = null;
 		Properties prop = new Properties();
 		try {
@@ -117,7 +117,7 @@ public  class browserUtility {
 		
 		TakesScreenshot screenshot = (TakesScreenshot)driver.get();
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
-		String path = System.getProperty("user.dir")+"//Screenshots//"+name+"_"+timestamp+".png";
+		String path = System.getProperty("user.dir")+ File.separator+"Screenshots"+ File.separator+name+"_"+timestamp+".png";
 		File screenshotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenshotData, screenshotFile);
