@@ -24,7 +24,7 @@ public class SearchProductTest{
 	
 	@BeforeMethod(description = "Able to Login with valid login")
 	public void setUp() {
-		homepage = new HomePage("chrome",false);
+		homepage = new HomePage("chrome",true);
 		myaccountPage= homepage.go_To_LoginPage().do_Login_with("pocori3115@lealking.com","password");
 	}
 	

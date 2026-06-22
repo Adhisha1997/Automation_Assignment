@@ -20,7 +20,7 @@ public class CheckoutProductTest {
 	
 	@BeforeMethod
 	public void setup() {
-		 home=new HomePage("Chrome", false);
+		 home=new HomePage("Chrome", true);
 		 searchProductPage=home.go_To_LoginPage().do_Login_with("pocori3115@lealking.com","password").product_Search(product_name);
 	}
 	

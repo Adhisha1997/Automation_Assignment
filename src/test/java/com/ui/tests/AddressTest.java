@@ -19,7 +19,7 @@ public class AddressTest {
 	
 	@BeforeMethod
 	public void setup() {
-		 home = new HomePage("chrome", false);
+		 home = new HomePage("chrome", true);
 		 myaccount=home.go_To_LoginPage().do_Login_with("pocori3115@lealking.com","password");
 		addressPOJO= fakerUtility.Fakeaddress();
 	}
