@@ -17,4 +17,14 @@ public class LoginDataProvider {
 		
 		
 	}
+	
+	@DataProvider(name = "csvInvalidLoginDataProvider")
+		public Iterator<LoginCredentials> Invalidlogindata()  {
+			
+			return csvReaderUtility.csvFileReader("InvalidData");
+			
+			
+		}
+		
+	
 }

@@ -1,15 +1,13 @@
 package com.ui.tests;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ui.pages.HomePage;
 import com.ui.pojo.LoginCredentials;
-import com.utility.loggerUtility;
 
 @Listeners({com.ui.listner.TestListner.class})
 public class LoginTest {
